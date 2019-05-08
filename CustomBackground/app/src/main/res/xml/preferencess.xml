@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android" >
-    <PreferenceScreen
-        android:title="Interface"
-        android:summary="option">
-        
-    </PreferenceScreen>
+    <ListPreference 
+        android:entries="@array/bg_entries" 
+        android:title="Background" 
+        android:key="settings_bg" 
+        android:dialogTitle="Custom Background" 
+		android:entryValues="@array/bg_values" />
 </PreferenceScreen>
