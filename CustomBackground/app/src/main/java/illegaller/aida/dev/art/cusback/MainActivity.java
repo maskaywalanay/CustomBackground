@@ -26,10 +26,20 @@ public class MainActivity extends Activity
     public boolean onOptionsItemSelected(MenuItem item)
     {
         // TODO: Implement this method
-        if(item.getItemId() == R.id.item)
+        // pergantian if menjadi switch
+        switch(item.getItemId()) 
         {
+            case R.id.item:
             startActivity(new Intent(this,ControlList.class));
+            return true;
+            
+            case R.id.item_exit:
+                finishAffinity();
+                return true;
+            
         }
+        
+        
         return super.onOptionsItemSelected(item);
     }
     

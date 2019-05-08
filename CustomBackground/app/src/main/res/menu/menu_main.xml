@@ -4,4 +4,8 @@
         android:id="@+id/item"
         android:title="Item"/>
     
+    <item
+        android:id="@+id/item_exit"
+        android:title="exit"/>
+    
 </menu>
